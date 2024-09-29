@@ -22,3 +22,10 @@ and now to start the nginx you can just run docker compose with this command
 ```
 docker compose up -d
 ```
+
+### additional
+to avoid the use of http with mcs you can block the `23333` port via ufw by using this command
+```
+ufw deny 23333
+ufw deny 23333/tcp
+```
